@@ -1,0 +1,56 @@
+/* General Reset */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafc;
+  color: #333;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(180deg, #e8f0ff 0%, #ffffff 100%);
+}
+
+/* Resource Cards */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  border-radius: 0.75rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Section Titles */
+h2 {
+  font-weight: 700;
+  color: #004aad;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 1rem;
+}
+
+.modal-header {
+  background-color: #004aad;
+  color: white;
+}
