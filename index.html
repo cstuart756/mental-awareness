@@ -1,148 +1,184 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mental Health Awareness</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mental Health Awareness</title>
+    <link rel="icon" href="assets\images\favicon-mental-awareness.png" type="image/png">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    >
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm" aria-label="Main Navigation">
-    <div class="container">
-      <a class="navbar-brand text-primary fw-bold" href="#hero">Mental Health Awareness</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#resources">Resources</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header id="hero" class="bg-primary-subtle py-5 text-center">
-    <div class="container">
-      <h1 class="display-4 text-primary fw-bold">Together, We Can Make a Difference</h1>
-      <p class="lead">Exploring mental health topics with compassion and clarity.</p>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main id="resources" class="container my-5">
-    <section>
-      <h2 class="text-center mb-4">Explore Our Resources</h2>
-
-      <!-- 4-Grid Container -->
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-
-        <!-- Example Card 1 -->
-        <article class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/images/anxious.png" class="card-img-top" alt="Understanding Anxiety">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Understanding Anxiety</h5>
-              <p class="card-text">Learn about signs, symptoms, and coping strategies for anxiety.</p>
-              <a href="#" class="btn btn-primary mt-auto">Read More</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Example Card 2 -->
-        <article class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/images/depression.png" class="card-img-top" alt="Coping with Depression">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Coping with Depression</h5>
-              <p class="card-text">Explore effective methods and support systems for managing depression.</p>
-              <a href="#" class="btn btn-primary mt-auto">Read More</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Example Card 3 -->
-        <article class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/images/mindfulness.png" class="card-img-top" alt="Practicing Mindfulness">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Practicing Mindfulness</h5>
-              <p class="card-text">Discover mindfulness techniques to stay grounded and calm.</p>
-              <a href="#" class="btn btn-primary mt-auto">Read More</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Example Card 4 -->
-        <article class="col">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/images/scenic.png" class="card-img-top" alt="Finding Your Purpose">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Finding Your Purpose</h5>
-              <p class="card-text">How connecting with your purpose can bring meaning to your life.</p>
-              <a href="#" class="btn btn-primary mt-auto">Read More</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="my-5 text-center">
-      <h2>About Us</h2>
-      <p>We are dedicated to providing accessible resources and information to promote mental wellness and reduce the stigma surrounding mental health issues.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="my-5 text-center">
-      <h2>Contact Us</h2>
-      <p>If you or someone you know needs help, please contact a mental health professional or a crisis hotline. This site is for informational purposes only.</p>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
-        Send Message
-      </button>
-    </section>
-  </main>
-
-  <!-- Contact Modal -->
-  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Thank you for reaching out. We’ll get back to you as soon as possible!</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Main Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm" aria-label="Main Navigation">
+      <div class="container">
+        <a class="navbar-brand text-primary fw-bold" href="#hero">Mental Health Awareness</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#resources">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
+    </nav>
 
-  <!-- Footer -->
-  <footer class="bg-primary text-white py-4 mt-5">
-    <div class="container text-center">
-      <p class="mb-0">&copy; 2025 Mental Health Awareness. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Hero Header Section -->
+    <header id="hero" class="bg-primary-subtle py-5 text-center">
+      <div class="container">
+        <h1 class="display-4 text-primary fw-bold">Together, We Can Make a Difference</h1>
+        <p class="lead">Exploring mental health topics with compassion and clarity.</p>
+      </div>
+    </header>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Resources Section -->
+    <main id="resources" class="container my-5">
+      <section>
+        <h2 class="text-center mb-4">Explore Our Resources</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
+          <!-- Example Grid Item -->
+          <article class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/images/anxious.png" class="card-img-top" alt="Illustration of person looking anxious">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Understanding Anxiety</h5>
+                <p class="card-text">Learn about the signs, symptoms, and coping strategies for anxiety disorders.</p>
+                <a href="#" class="btn btn-primary mt-auto">Read More</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="assets\images\ChatGPT Image Oct 25, 2025, 07_55_13 PM.png" class="card-img-top" alt="Illustration of a person feeling depressed">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Coping with Depression</h5>
+                <p class="card-text">Explore effective methods and support systems for managing depression.</p>
+                <a href="#" class="btn btn-primary mt-auto">Read More</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="assets\images\Meditation by the Fjord.png" class="card-img-top" alt="Illustration of practicing mindfulness">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Practicing Mindfulness</h5>
+                <p class="card-text">Discover techniques to stay grounded and present in daily life.</p>
+                <a href="#" class="btn btn-primary mt-auto">Read More</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/images/scenic.png" class="card-img-top" alt="Person looking at a scenic landscape">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Finding Your Purpose</h5>
+                <p class="card-text">How connecting with your purpose can bring meaning to your life.</p>
+                <a href="#" class="btn btn-primary mt-auto">Read More</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="my-5">
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center">
+            <h2 class="mb-3">About Us</h2>
+            <p>We are dedicated to providing accessible resources and information to promote mental wellness and reduce stigma surrounding mental health issues.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="my-5 text-center">
+        <div class="container">
+          <h2 class="mb-3">Contact Us</h2>
+          <p>If you or someone you know needs help, please contact a mental health professional or a crisis hotline.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Open Contact Form</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2025 Mental Health Awareness. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Optional: show alert when form is submitted
+      document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Thank you for reaching out! Your message has been received.');
+        const modal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
+        modal.hide();
+        this.reset();
+      });
+    </script>
+  </body>
 </html>
