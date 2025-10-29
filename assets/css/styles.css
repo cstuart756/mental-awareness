@@ -1,0 +1,61 @@
+/* Custom styles for accessibility and UX */
+:root {
+    --bs-primary: #0d6efd;
+    --bs-primary-subtle: #e9f5ff;
+    --bs-secondary: #6c757d;
+    --bs-white: #fff;
+    --bs-body-bg: #f8f9fa;
+    --bs-body-color: #212529;
+}
+
+body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+.text-primary, .navbar-brand {
+    color: var(--bs-primary) !important;
+}
+
+/* Ensure good contrast for text on light backgrounds */
+.bg-white {
+    color: var(--bs-body-color);
+}
+.bg-primary-subtle {
+    color: var(--bs-body-color);
+}
+
+/* Enhances card usability and visual appeal */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15) !important;
+}
+
+/* Enforce uniform image dimensions to maintain layout integrity */
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+/* Accessibility: Focus visible state for navigation links */
+.nav-link:focus, .btn:focus {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+}
+
+/* Accessibility: Skip to main content link for screen reader users */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+.skip-link:focus {
+    top: 0;
+}
