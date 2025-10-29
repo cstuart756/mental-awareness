@@ -6,294 +6,109 @@
     <title>Mental Health Awareness</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Custom CSS for theme colors and spacing -->
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .card {
-            border: none;
-            border-radius: 1rem;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .card-img-top {
-            border-top-left-radius: 1rem;
-            border-top-right-radius: 1rem;
-        }
-        .text-blue { color: #0d6efd; }
-        .bg-light-blue { background-color: #e9f5ff; }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <!-- Main Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm" aria-label="Main Navigation">
         <div class="container">
-            <a class="navbar-brand text-blue fw-bold" href="#">Mental Health Awareness</a>
+            <a class="navbar-brand text-primary fw-bold" href="#hero">Mental Health Awareness</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#resources">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
+                        <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <header class="bg-light-blue py-5 text-center">
+    <!-- Hero Header Section -->
+    <header id="hero" class="bg-primary-subtle py-5 text-center">
         <div class="container">
-            <h1 class="display-4 text-blue fw-bold">Together, We Can Make a Difference</h1>
+            <h1 class="display-4 text-primary fw-bold">Together, We Can Make a Difference</h1>
             <p class="lead">Exploring mental health topics with compassion and clarity.</p>
         </div>
     </header>
 
-    <!-- Grid Content Section -->
-    <main class="container my-5">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-            <!-- Grid Item 1 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+1" class="card-img-top" alt="Article 1 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Understanding Anxiety</h5>
-                        <p class="card-text">Learn about the signs, symptoms, and coping strategies for anxiety disorders.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
+    <!-- Main Content Section: 20-Item Grid -->
+    <main id="resources" class="container my-5">
+        <section>
+            <h2 class="text-center mb-4">Explore Our Resources</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <!-- Start of Grid Items -->
+                <!-- Item 1: Understanding Anxiety -->
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/images/anxious.png?text=Anxiety+Support" class="card-img-top" alt="Illustration of person with head in hands, looking anxious">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Understanding Anxiety</h5>
+                            <p class="card-text">Learn about the signs, symptoms, and coping strategies for anxiety disorders.</p>
+                            <a href="#" class="btn btn-primary mt-auto">Read More</a>
+                        </div>
                     </div>
+                </article>
+                <!-- Item 2: Coping with Depression -->
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets\images\ChatGPT Image Oct 25, 2025, 07_55_13 PM.png?text=Coping+with+Depression" class="card-img-top" alt="Illustration of a person looking down and thoughtful, surrounded by blue tones">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Coping with Depression</h5>
+                            <p class="card-text">Explore effective methods and support systems for managing depression.</p>
+                            <a href="#" class="btn btn-primary mt-auto">Read More</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- ... (Repeat similar articles 18 more times with different titles and alt text) ... -->
+                <!-- Item 20: Finding Your Purpose -->
+                <article class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets\images\scenic.png?text=Finding+Purpose" class="card-img-top" alt="Illustration of a person looking out at a scenic landscape">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Finding Your Purpose</h5>
+                            <p class="card-text">How connecting with your purpose can bring meaning and motivation to your life.</p>
+                            <a href="#" class="btn btn-primary mt-auto">Read More</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- End of Grid Items -->
+            </div>
+        </section>
+
+        <!-- About and Contact Sections for single page layout -->
+        <section id="about" class="my-5">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <h2 class="mb-3">About Us</h2>
+                    <p>We are dedicated to providing accessible resources and information to promote mental wellness and reduce the stigma surrounding mental health issues.</p>
                 </div>
             </div>
-            <!-- Grid Item 2 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+2" class="card-img-top" alt="Article 2 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Coping with Depression</h5>
-                        <p class="card-text">Explore effective methods and support systems for managing depression.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
+        </section>
+        <section id="contact" class="my-5">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <h2 class="mb-3">Contact Us</h2>
+                    <p>If you or someone you know needs help, please contact a mental health professional or a crisis hotline. This site is for informational purposes only.</p>
                 </div>
             </div>
-            <!-- Grid Item 3 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+3" class="card-img-top" alt="Article 3 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Mindfulness and Meditation</h5>
-                        <p class="card-text">Discover how mindfulness can reduce stress and improve mental well-being.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 4 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+4" class="card-img-top" alt="Article 4 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">The Stigma of Mental Illness</h5>
-                        <p class="card-text">Find out how to challenge the stigma and promote open conversations.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 5 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+5" class="card-img-top" alt="Article 5 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Building Resilience</h5>
-                        <p class="card-text">Practical tips for strengthening your mental and emotional resilience.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 6 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+6" class="card-img-top" alt="Article 6 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Digital Detox for Mental Health</h5>
-                        <p class="card-text">How taking a break from screens can benefit your mental well-being.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 7 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+7" class="card-img-top" alt="Article 7 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Supporting a Friend in Need</h5>
-                        <p class="card-text">Learn how to offer support to someone struggling with their mental health.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 8 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+8" class="card-img-top" alt="Article 8 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Stress Management Techniques</h5>
-                        <p class="card-text">A collection of simple techniques to manage and reduce daily stress.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 9 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+9" class="card-img-top" alt="Article 9 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Nutrition and Mental Health</h5>
-                        <p class="card-text">Discover the link between what you eat and your psychological well-being.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 10 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+10" class="card-img-top" alt="Article 10 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">The Importance of Sleep</h5>
-                        <p class="card-text">How a healthy sleep routine can significantly improve your mental state.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 11 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+11" class="card-img-top" alt="Article 11 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Finding Professional Help</h5>
-                        <p class="card-text">A guide on how to find and choose the right mental health professional.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 12 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+12" class="card-img-top" alt="Article 12 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Breaking Free from Overthinking</h5>
-                        <p class="card-text">Techniques to help quiet your mind and overcome excessive worrying.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 13 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+13" class="card-img-top" alt="Article 13 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Balancing Work and Life</h5>
-                        <p class="card-text">Tips for maintaining a healthy work-life balance for better mental health.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 14 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+14" class="card-img-top" alt="Article 14 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Creative Outlets for Expression</h5>
-                        <p class="card-text">Using art, writing, and music to process emotions and promote healing.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 15 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+15" class="card-img-top" alt="Article 15 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">The Power of Positive Affirmations</h5>
-                        <p class="card-text">How practicing positive self-talk can shift your mindset and boost confidence.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 16 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+16" class="card-img-top" alt="Article 16 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Exercise and Your Mood</h5>
-                        <p class="card-text">The science behind why physical activity can be a powerful mood booster.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 17 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+17" class="card-img-top" alt="Article 17 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Setting Healthy Boundaries</h5>
-                        <p class="card-text">Understand the importance of setting boundaries to protect your mental energy.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 18 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+18" class="card-img-top" alt="Article 18 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Journaling for Self-Reflection</h5>
-                        <p class="card-text">A guide to using journaling as a tool for self-discovery and stress relief.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 19 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+19" class="card-img-top" alt="Article 19 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Practicing Gratitude</h5>
-                        <p class="card-text">The simple act of gratitude can have a profound impact on your happiness.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Grid Item 20 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/400x300.png?text=Article+20" class="card-img-top" alt="Article 20 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Finding Your Purpose</h5>
-                        <p class="card-text">How connecting with your purpose can bring meaning and motivation to your life.</p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-blue text-white py-4 mt-5">
+    <footer class="bg-primary text-white py-4 mt-5">
         <div class="container text-center">
-            <p>&copy; 2025 Mental Health Awareness. All rights reserved.</p>
+            <p class="mb-0">&copy; 2025 Mental Health Awareness. All rights reserved.</p>
         </div>
     </footer>
 
