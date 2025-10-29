@@ -1,6 +1,6 @@
 # mental-awareness
 ## 1. Application Purpose & User Value
-This is a one-page, interactive web application built with Bootstrap 5 to serve as a hub for mental health awareness resources. The site offers users easy access to 20 grid-based cards, each containing informative content on mental health topics.
+This is a one-page, interactive web application built with Bootstrap 5 to serve as a hub for mental health awareness resources. The site offers users easy access to 3 grid-based cards, each containing informative content on mental health topics.
 
 **User Value:**
 *   **Accessibility:** The design prioritizes accessibility, ensuring all users can engage with the content, including those with disabilities.

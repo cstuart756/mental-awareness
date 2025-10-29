@@ -1,61 +1,81 @@
-/* Custom styles for accessibility and UX */
-:root {
-    --bs-primary: #0d6efd;
-    --bs-primary-subtle: #e9f5ff;
-    --bs-secondary: #6c757d;
-    --bs-white: #fff;
-    --bs-body-bg: #f8f9fa;
-    --bs-body-color: #212529;
-}
-
+/* General Styling */
 body {
-    background-color: var(--bs-body-bg);
-    color: var(--bs-body-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
-.text-primary, .navbar-brand {
-    color: var(--bs-primary) !important;
+/* Navbar */
+.navbar-brand {
+  font-size: 1.4rem;
 }
 
-/* Ensure good contrast for text on light backgrounds */
-.bg-white {
-    color: var(--bs-body-color);
-}
-.bg-primary-subtle {
-    color: var(--bs-body-color);
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-/* Enhances card usability and visual appeal */
+.nav-link:hover {
+  color: #0d6efd;
+}
+
+/* Hero Section */
+#hero {
+  background-image: linear-gradient(to bottom right, #e3f2fd, #f0f8ff);
+}
+
+#hero h1 {
+  font-weight: 700;
+}
+
+/* Cards */
 .card {
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Enforce uniform image dimensions to maintain layout integrity */
-.card-img-top {
-    object-fit: cover;
-    height: 200px;
+/* About Section */
+#about p {
+  font-size: 1.1rem;
 }
 
-/* Accessibility: Focus visible state for navigation links */
-.nav-link:focus, .btn:focus {
-    outline: 2px solid var(--bs-primary);
-    outline-offset: 2px;
+/* Contact Section */
+#contact form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Accessibility: Skip to main content link for screen reader users */
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #000;
-    color: white;
-    padding: 8px;
-    z-index: 100;
+#contact button {
+  font-weight: bold;
 }
-.skip-link:focus {
-    top: 0;
+
+/* Modal */
+.modal-content {
+  border-radius: 12px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+/* Footer */
+footer {
+  background: #0d6efd;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95rem;
 }
