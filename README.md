@@ -22,7 +22,8 @@ This is a one-page, interactive web application built with Bootstrap 5 to serve 
     *   **Semantic HTML:** Tags like `<main>`, `<header>`, and `<nav>` provide meaningful structure.
     *   **Alt Text:** All `<img>` tags include descriptive `alt` text.
     *   **Keyboard Navigation:** Interactive elements are accessible via keyboard, and focus states are clearly visible.
-
+![CSS Validation W3C](assets/images/css-validation-mental-awareness.png)
+![HTML Validation W3C](assets/images/html-validation-mental-awareness.png)
 ## 4. Deployment Procedure
 This site is built for easy deployment to any cloud hosting platform.
 
